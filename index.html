@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmarker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Bree+Serif&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div
+      class="container d-flex justify-content-center align-items-center flex-column p-3"
+    >
+      <div class="item my-5">
+        <h1>Bookmarker</h1>
+      </div>
+      <div class="subject w-100 my-4">
+        <div class="text my-3 text-center">
+          <h1>
+            <i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites
+            <i class="fa-solid fa-bookmark"></i>
+          </h1>
+        </div>
+        <div class="mb-3 p-2">
+          <label for="enameInpute" class="form-label"
+            ><h5 class="fs-5">
+              <i class="fa-solid fa-book-bookmark mx-2"></i>site Name
+            </h5></label
+          >
+          <input
+            type="email"
+            class="form-control bom"
+            id="nameInpute"
+            placeholder="Bookmark Name"
+          />
+        </div>
+        <div class="mb-3 p-2">
+          <label for="urlInput" class="form-label"
+            ><h5><i class="fa-solid fa-link mx-2"></i>Site Url</h5></label
+          >
+          <input
+            type="email"
+            class="form-control dom"
+            id="urlInput"
+            placeholder="Web site Url"
+          />
+        </div>
+        <div class="button text-center w-100">
+          <button class="btns btn btn-danger mb-4">submit</button>
+        </div>
+      </div>
+      <table class="table bg-white p-3 text-center w-100">
+        <thead>
+          <tr>
+            <td class="text-capitalize">Index</td>
+            <td class="text-capitalize">WebSite Name</td>
+            <td class="text-capitalize">Visit</td>
+            <td class="text-capitalize">delete</td>
+          </tr>
+        </thead>
+        <thead id="my table"></thead>
+      </table>
+    </div>
+    <div
+      id="demo"
+      class="finally d-flex justify-content-center align-items-center shadow p-5 d-none w"
+    >
+      <div class="wrong bg-white rounded p-3 fs-5 position-relative">
+        <i class="fa-solid fa-circle icon"></i>
+        <i class="fa-solid fa-circle icon2"></i>
+        <i class="fa-solid fa-circle icon3"></i>
+        <div class="text-end position-absolute top-0 end-0 p-3 fs-3">
+          <i id="exit" class="ob fa-solid fa-xmark text-end"></i>
+        </div>
+
+        <div class="mt-3 p-3">
+          <div class="test">
+            <h5>
+              Site Name or Url is not valid, Please follow the rules below :
+            </h5>
+          </div>
+          <p class="fs-5 mt-3">
+            <i class="fa-solid fa-circle-arrow-right me-1 text-danger"></i>Site
+            name must contain at least 3 characters
+          </p>
+          <p class="fs-5">
+            <i class="fa-solid fa-circle-arrow-right me-1 text-danger"></i>Site
+            URL must be a valid one
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

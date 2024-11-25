@@ -1,0 +1,109 @@
+body{
+  background-color:#fcecd2a3  ;
+}
+
+
+
+
+::selection {
+  background-color:#fec260  ;
+}
+.item{
+  position: relative;
+}
+.item h1{
+
+
+  font-family:
+ Pacifico, cursive;
+  font-size: 50px;
+  
+}
+
+.item::after{
+  content: "";
+width: 100%;
+height: 25%;
+  background-color:#fec260 ;
+  position: absolute;
+  left: 0;
+  right: 0;
+  
+  bottom: 10px;
+  z-index: -1;
+  transition: all 0.5s;
+}
+.item:hover::after{
+  height: 50%;
+}
+.subject{
+  width: 100%;
+  border: dotted;
+  border-left: 0;
+  border-right: 0;
+  
+  
+}
+.text h1 {
+  font-size: 25px;
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+display:inline;
+background-clip: text;
+-webkit-text-fill-color: rgba(255, 255, 255, 0);
+font-family: Righteous, cursive;
+
+}
+.button button{
+width: 160px;
+background-color: #d1512d!important;
+}
+
+
+.table{
+  font-family: "PT Sans Caption", sans-serif;
+}
+.finally{
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.441);
+position:fixed;
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+}
+.icon3 {
+  color: #3ca55c;
+}
+.icon2{
+  color: #ffc107;
+}
+.icon{
+
+  color: #e95932;
+}
+.wrong{
+  width: 490px;
+  
+}
+.test h5{
+  font-family: "Bree Serif", serif;
+  
+}
+
+
+.btn-visit{
+  width: 100px;
+  background-color: #9c9439;
+  color: white;
+}
+.btn-visit:hover{
+
+width: 100px;
+  background-color: #888024;
+  color: white;
+}
+.finally .ob{
+  cursor: pointer;
+}
+
